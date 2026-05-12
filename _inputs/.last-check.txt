@@ -1,0 +1,2 @@
+=== Küa check.sh RUN_HASH source — 2026-05-12T18:17:30Z ===
+fail=0 warn=1

@@ -1,34 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=IBM+Plex+Mono:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/**
- * Design tokens — Replit Agent fills these from `_inputs/lead.json.palette`
- * + the direction picked in `theme-variants.md`. Components NEVER hardcode
- * color values; they use `text-primary`, `bg-background`, etc. (mapped in
- * tailwind.config.js).
- */
 @layer base {
   :root {
-    /* RGB triples — Tailwind's `<alpha-value>` syntax requires this format. */
-    --background: 255 255 255;
-    --foreground: 15 23 42;
-    --primary: 0 0 0;
+    /* Palette from lead.json */
+    --primary: 236 124 51;          /* #ec7c33 — orange accent */
     --primary-foreground: 255 255 255;
-    --accent: 0 0 0;
+    --accent: 121 54 11;            /* #79360b — dark brown accent on light */
     --accent-foreground: 255 255 255;
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
-    --border: 226 232 240;
+
+    /* Light surface */
+    --background: 250 250 248;      /* #FAFAF8 warm off-white */
+    --foreground: 27 27 27;         /* #1B1B1B */
+    --surface: 255 255 255;
+    --muted: 240 240 238;
+    --muted-foreground: 100 100 95;
+    --border: 220 220 215;
   }
 
-  /* Global resets / smoothing */
-  * {
-    border-color: rgb(var(--border));
+  html {
+    scroll-behavior: smooth;
   }
+
   body {
-    font-family: theme('fontFamily.sans');
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    @apply bg-[#FAFAF8] text-[#1B1B1B] font-sans antialiased;
+  }
+
+  /* Dark section surface token */
+  .dark-surface {
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+  }
+}
+
+@layer utilities {
+  .text-orange {
+    color: #ec7c33;
+  }
+  .bg-orange {
+    background-color: #ec7c33;
+  }
+  .bg-dark {
+    background-color: #1B1B1B;
+  }
+  .text-dark {
+    color: #1B1B1B;
+  }
+  .container-editorial {
+    max-width: 1760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    .container-editorial {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
   }
 }

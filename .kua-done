@@ -1,0 +1,11 @@
+{
+  "commitSha": "pending",
+  "checkPassed": true,
+  "checkRunHash": "21e3a4df94811cf3bebdb68f7478cfffab64c855",
+  "remoteUrl": "https://github.com/bonjour-kua/kua-demo-construction-lesco-inc-05fc5",
+  "sections": ["Header","Hero","About","Services","Process","Gallery","Testimonials","Faq","Contact","Footer"],
+  "hardGates": ["tsc","sections","no-ts-nocheck","photos-wired","logo-in-navbar","no-placeholders","seo","skip-link-header","vite-build"],
+  "softWarns": ["gate8-photo-distribution-23-of-22-target-33"],
+  "lang": "fr-CA",
+  "design": "Editorial Brutalist"
+}

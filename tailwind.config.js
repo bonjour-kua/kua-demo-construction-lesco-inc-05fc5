@@ -3,9 +3,6 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      // CSS-vars-driven design tokens. The skill / Replit Agent fills these
-      // in `src/index.css` from `_inputs/lead.json.palette` — do NOT hardcode
-      // hex values in components.
       colors: {
         background: 'rgb(var(--background) / <alpha-value>)',
         foreground: 'rgb(var(--foreground) / <alpha-value>)',
@@ -22,11 +19,26 @@ export default {
           foreground: 'rgb(var(--muted-foreground) / <alpha-value>)',
         },
         border: 'rgb(var(--border) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
       },
       fontFamily: {
-        // Replace with the typography choice from theme-variants.md.
-        sans: ['system-ui', 'sans-serif'],
-        display: ['system-ui', 'sans-serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'monospace'],
+      },
+      maxWidth: {
+        editorial: '1760px',
+      },
+      fontSize: {
+        '10xl': ['10rem', { lineHeight: '0.85' }],
+        '11xl': ['11rem', { lineHeight: '0.85' }],
+      },
+      letterSpacing: {
+        tightest: '-0.04em',
+        tighter2: '-0.03em',
+        tighter3: '-0.02em',
+        widest2: '0.2em',
+        widest3: '0.3em',
       },
     },
   },
