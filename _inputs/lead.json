@@ -1,0 +1,30 @@
+{
+  "company_name": "Construction LESCO inc.",
+  "slug": "construction-lesco-inc-05fc5",
+  "facebook_url": "https://www.facebook.com/p/Construction-LESCO-inc-100085764271769/",
+  "description": "Entreprise de construction et rénovation de tout genre résidentiel et commercial.",
+  "industry": "Construction et rénovation",
+  "sector": "Construction et rénovation",
+  "phone": "(516) 503-1953",
+  "website": "http://www.lescoconstruction.net/",
+  "french_phrases": [
+    "Construction neuve et rénovation résidentielle et commerciale, tous types de travaux.",
+    "Charpente, finition intérieure, sous-sol, cuisine — du gros œuvre à la finition.",
+    "On s'occupe de vos projets résidentiels et commerciaux de A à Z."
+  ],
+  "palette": {
+    "dominant": [
+      "#ec7c33",
+      "#e9a986",
+      "#79360b"
+    ],
+    "vibrant": "#ec7c33",
+    "dark_vibrant": "#79360b",
+    "accent_on_dark": "#ec7c33",
+    "accent_on_light": "#79360b"
+  },
+  "logo": {
+    "rel_path": "_inputs/photos/logo-clean.png",
+    "bg_removed": true
+  }
+}
